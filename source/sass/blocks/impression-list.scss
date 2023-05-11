@@ -1,0 +1,5 @@
+@use "../mixins.scss" as *;
+
+.impression-list {
+  @include list-reset;
+}

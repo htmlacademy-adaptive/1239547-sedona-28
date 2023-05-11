@@ -1,0 +1,60 @@
+@use "./variables.scss" as *;
+
+.review-form__item {
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+
+  border-top: 1px solid $color-border;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+
+  text-align: left;
+}
+
+.review-form__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: $color-title;
+}
+
+.review-form__label {
+  color: #333333;
+}
+
+.review-form__field {
+  border: none;
+  background-color: #f2f2f2;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: initial;
+  color: #000000;
+}
+
+.review-form__label-radio {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: initial;
+  color: #000000;
+}
+
+.review-form__label-checkbox {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: initial;
+  color: #000000;
+}
+
+.review-form__required {
+  font-size: 12px;
+  text-align: right;
+  color: #333333;
+}

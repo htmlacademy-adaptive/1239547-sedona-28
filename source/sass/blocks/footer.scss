@@ -1,0 +1,14 @@
+@use "./variables.scss" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__title-hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-text-black;
+}

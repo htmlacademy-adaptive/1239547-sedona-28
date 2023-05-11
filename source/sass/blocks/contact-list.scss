@@ -1,0 +1,5 @@
+@use "../mixins.scss" as *;
+
+.contact-list {
+  @include list-reset;
+}

@@ -1,0 +1,10 @@
+@use "./variables.scss" as *;
+@use "../mixins.scss" as *;
+
+.social {
+  @include list-reset;
+}
+
+.social__link {
+  background-color: $color-button;
+}

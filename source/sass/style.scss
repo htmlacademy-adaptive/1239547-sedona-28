@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+@use "./base/font.scss";
+@use "./base/base.scss";
+@use "./variables.scss";
+@use "./mixins.scss";
+@use "./blocks/page.scss";
+@use "./blocks/header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/welcome.scss";
+@use "./blocks/intro.scss";
+@use "./blocks/advantage-full.scss";
+@use "./blocks/advantage.scss";
+@use "./blocks/features.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/offer.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/welcome-inner.scss";
+@use "./blocks/photo-list.scss";
+@use "./blocks/photo.scss";
+@use "./blocks/review-form.scss";
+@use "./blocks/contact-list.scss";
+@use "./blocks/impression-list.scss";
+@use "./blocks/attractions-list.scss";
+@use "./blocks/button.scss";
+@use "./blocks/modal.scss";

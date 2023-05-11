@@ -1,0 +1,26 @@
+@use "./variables.scss" as *;
+@use "../mixins.scss" as *;
+
+.site-list {
+  @include list-reset;
+  background-color: $color-button;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-list__item {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-text-contrast;
+
+  &:not(:last-child) {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  &--current {
+    color: $color-text-contrast;
+  }
+}
