@@ -1,7 +1,7 @@
 @use "./variables.scss" as *;
 
 .modal {
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px $color-modal-shadow;
 }
 
 .modal__title {

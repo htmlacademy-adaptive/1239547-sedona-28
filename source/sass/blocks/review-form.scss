@@ -23,18 +23,18 @@
 }
 
 .review-form__label {
-  color: #333333;
+  color: $color-text;
 }
 
 .review-form__field {
   border: none;
-  background-color: #f2f2f2;
+  background-color: $color-field-background;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: initial;
-  color: #000000;
+  color: $color-text-filed;
 }
 
 .review-form__label-radio {
@@ -42,7 +42,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: initial;
-  color: #000000;
+  color: $color-text-filed;
 }
 
 .review-form__label-checkbox {
@@ -50,11 +50,11 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: initial;
-  color: #000000;
+  color: $color-text-filed;
 }
 
 .review-form__required {
   font-size: 12px;
   text-align: right;
-  color: #333333;
+  color: $color-text-remark;
 }

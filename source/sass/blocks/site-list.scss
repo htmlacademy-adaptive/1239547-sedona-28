@@ -17,10 +17,14 @@
   color: $color-text-contrast;
 
   &:not(:last-child) {
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 $color-menu-shadow;
   }
 
   &--current {
     color: $color-text-contrast;
   }
+}
+
+.site-list__link {
+  color: $color-text-contrast;
 }

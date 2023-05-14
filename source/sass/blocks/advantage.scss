@@ -1,5 +1,20 @@
 @use "./variables.scss" as *;
 
+.advantage__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-title;
+}
+
+.advantage__subtitle {
+  color: $color-text;
+}
+
+.advantage__description {
+  color: $color-text;
+}
+
 .advantage {
   &--blue {
     .advantage__title {
@@ -14,19 +29,4 @@
       color: $color-text-contrast;
     }
   }
-}
-
-.advantage__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  color: $color-title;
-}
-
-.advantage__subtitle {
-  color: $color-text;
-}
-
-.advantage__description {
-  color: $color-text;
 }
