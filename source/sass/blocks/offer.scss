@@ -1,0 +1,26 @@
+@use "./variables.scss" as *;
+
+.offer__container {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.offer__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-title;
+}
+
+.offer__description {
+  color: $color-text;
+}
+
+.offer__link {
+  background-color: $color-button;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-text-contrast;
+}

@@ -1,0 +1,5 @@
+@use "../mixins.scss" as *;
+
+.attractions-list {
+  @include list-reset;
+}

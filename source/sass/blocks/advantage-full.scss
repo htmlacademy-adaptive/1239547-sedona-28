@@ -1,0 +1,10 @@
+@use "./variables.scss" as *;
+
+.advantage-full {
+  background-color: $color-card-background;
+  color: $color-text-contrast;
+}
+
+.advantage-full__image {
+  display: block;
+}

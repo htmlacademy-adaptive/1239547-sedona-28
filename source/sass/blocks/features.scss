@@ -1,0 +1,24 @@
+@use "./variables.scss" as *;
+@use "../mixins.scss" as *;
+
+.features__container {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: $color-title;
+}
+
+.features__description {
+  text-align: left;
+  color: $color-text;
+}

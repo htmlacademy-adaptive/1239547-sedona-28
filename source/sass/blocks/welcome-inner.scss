@@ -1,0 +1,16 @@
+@use "./variables.scss" as *;
+
+.welcome-inner {
+  height: 214px;
+
+  background-image: url("../img/background-canyon-inner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-image-background;
+}
+
+.welcome-inner__logo-image {
+  position: relative;
+  top: 52px;
+}

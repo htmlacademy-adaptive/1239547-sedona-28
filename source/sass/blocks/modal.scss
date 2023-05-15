@@ -1,0 +1,20 @@
+@use "./variables.scss" as *;
+
+.modal {
+  box-shadow: 0 7px 15px $color-modal-shadow;
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-title;
+}
+
+.modal__text {
+  color: $color-text;
+}
+
+.modal__action {
+  background-color: $color-modal-action;
+}

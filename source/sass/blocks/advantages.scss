@@ -1,0 +1,14 @@
+@use "../mixins.scss" as *;
+
+.advantages {
+  background-color: #eeeeee;
+}
+
+.advantages__container {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.advantages__list {
+  @include list-reset;
+}

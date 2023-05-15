@@ -1,0 +1,24 @@
+@use "./variables.scss" as *;
+
+.photo__title {
+  font-weight: 700;
+  text-align: left;
+  color: $color-title;
+}
+
+.photo__author {
+  display: block;
+
+  text-align: left;
+  text-transform: initial;
+  color: $color-text;
+}
+
+.photo__like {
+  display: block;
+
+  font-weight: 700;
+  text-align: left;
+  text-transform: initial;
+  color: $color-text-black;
+}

@@ -1,0 +1,17 @@
+@use "./variables.scss" as *;
+
+.intro__container {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.intro__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-title;
+}
+
+.intro__description {
+  color: $color-text;
+}

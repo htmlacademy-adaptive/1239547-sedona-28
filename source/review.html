@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва - Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
@@ -12,16 +13,16 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="gallery.html">Фото и видео</a>
+            <a class="site-list__link" href="gallery.html">Фото и видео</a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a>Форма отзыва</a>
+            <a class="site-list__link">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
         <button class="main-nav__toogle" type="button">
@@ -35,11 +36,7 @@
 
       <section class="welcome-inner">
         <h2 class="visually-hidden">Приветсвие в городке</h2>
-
-        <img class="welcome-inner__image" src="img/background-canyon-inner.jpg" width="320" height="214" alt="Фотография каньона">
-        <div class="welcome-inner__title">
-          <img class="welcome-inner__title-image" src="img/welcome-text-inner.svg" width="229" height="39" alt="Заголовок городка Седона">
-        </div>
+        <img class="welcome-inner__logo-image" src="img/welcome-text-inner.svg" width="229" height="39" alt="Заголовок городка Седона">
       </section>
 
       <section class="intro">
@@ -56,7 +53,7 @@
           <h2 class="visually-hidden">Форма для заполнения</h2>
 
           <form class="review-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="review-form__name">
+            <fieldset class="review-form__item review-form__item--name">
               <legend class="review-form__title">Представьтесь:</legend>
               <label class="review-form__label" for="first-name">Имя*:</label>
               <input class="review-form__field" type="text" id="first-name" name="first-name" placeholder="Введите имя" value="Пётр" required>
@@ -65,7 +62,7 @@
               <label class="review-form__label" for="middle-name">Отчество:</label>
               <input class="review-form__field" type="text" id="middle-name" name="middle-name" placeholder="Введите отчество" value="Викторович">
             </fieldset>
-            <fieldset class="review-form__contact">
+            <fieldset class="review-form__item review-form__item--contact">
               <legend class="review-form__title">Контактная информация:</legend>
               <ul class="contact-list">
                 <li class="contact-list__item">
@@ -78,7 +75,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__impression">
+            <fieldset class="review-form__item review-form__item--impression">
               <legend class="review-form__title">Ваше общее впечатление:</legend>
               <ul class="impression-list">
                 <li class="impression-list__item">
@@ -95,7 +92,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__attractions">
+            <fieldset class="review-form__item review-form__item--attractions">
               <legend class="review-form__title">Посещенные достопримечательности:</legend>
               <ul class="attractions-list">
                 <li class="attractions-list__item">
@@ -116,9 +113,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__name">
+            <fieldset class="review-form__item review-form__item--name">
               <legend class="review-form__title">Опишите свои эмоции:</legend>
-              <textarea class="review-form__field" name="comment-text" id="comment-text" cols="30" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="review-form__field" name="comment-text" id="comment-text" cols="25" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
               <label class="visually-hidden" for="comment-text">Комментарий для отзыва</label>
             </fieldset>
             <div class="review-form__action">
