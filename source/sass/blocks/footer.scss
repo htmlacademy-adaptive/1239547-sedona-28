@@ -1,9 +1,9 @@
 @use "./variables.scss" as *;
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer__container {
+  padding-top: 33px;
+  padding-bottom: 34px;
+  margin: 0;
 }
 
 .footer__title-hashtag {
@@ -11,4 +11,14 @@
   font-weight: 700;
   line-height: 26px;
   color: $color-text-black;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -5,3 +5,9 @@
 .main-nav__toogle {
   position: relative;
 }
+
+@media (min-width: 768px) {
+  .main-nav__toogle {
+    display: none;
+  }
+}

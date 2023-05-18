@@ -14,3 +14,15 @@
   position: relative;
   top: 90px;
 }
+
+@media (min-width: $tablet-width) {
+  .welcome__logo-image {
+    top: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome__logo-image {
+    top: 78px;
+  }
+}

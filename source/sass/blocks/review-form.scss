@@ -1,6 +1,14 @@
 @use "./variables.scss" as *;
 
+.review-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .review-form__item {
+  width: 100%;
+  margin: 0;
   padding-top: 24px;
   padding-right: 20px;
   padding-bottom: 39px;
@@ -12,6 +20,11 @@
   border-left: none;
 
   text-align: left;
+
+  &--name {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .review-form__title {
@@ -27,6 +40,7 @@
 }
 
 .review-form__field {
+  width: 100%;
   border: none;
   background-color: $color-field-background;
 
@@ -57,4 +71,35 @@
   font-size: 12px;
   text-align: right;
   color: $color-text-remark;
+}
+
+.review-form__action {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form__item {
+    width: 100%;
+
+    &--name,
+    &--contact {
+      width: 50%;
+    }
+
+    &--review {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+
+  .review-form__action {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }

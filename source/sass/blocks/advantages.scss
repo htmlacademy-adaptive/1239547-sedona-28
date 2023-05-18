@@ -1,7 +1,8 @@
+@use "./variables.scss" as *;
 @use "../mixins.scss" as *;
 
 .advantages {
-  background-color: #eeeeee;
+  background-color: $color-card-secondary-background;
 }
 
 .advantages__container {
@@ -11,4 +12,41 @@
 
 .advantages__list {
   @include list-reset;
+}
+
+.advantages__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-card-secondary-border;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__container {
+    margin: 0;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advantages__item {
+    padding-top: 41px;
+    padding-right: 33px;
+    padding-bottom: 41px;
+    padding-left: 33px;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    padding-top: 52px;
+    padding-right: 50px;
+    padding-bottom: 52px;
+    padding-left: 50px;
+  }
 }
