@@ -1,9 +1,9 @@
 @use "./variables.scss" as *;
 
 .review-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .review-form__item {
@@ -20,11 +20,6 @@
   border-left: none;
 
   text-align: left;
-
-  &--name {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .review-form__title {
@@ -82,21 +77,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review-form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
   .review-form__item {
     width: 100%;
 
-    &--name,
-    &--contact {
-      width: 50%;
+    &--impression,
+    &--attractions {
+      grid-column: 1/3;
     }
 
     &--review {
+      grid-column: 1/3;
       max-width: 768px;
       margin: 0 auto;
     }
   }
 
   .review-form__action {
+    grid-column: 1/3;
     flex-direction: row;
     justify-content: space-between;
     max-width: 768px;
