@@ -1,7 +1,7 @@
 @use "./variables.scss" as *;
 
 .welcome-inner {
-  height: 214px;
+  min-height: 214px;
 
   background-image: url("../img/background-canyon-inner.jpg");
   background-position: center;
@@ -13,4 +13,16 @@
 .welcome-inner__logo-image {
   position: relative;
   top: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome-inner__logo-image {
+    top: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome-inner__logo-image {
+    top: 101px;
+  }
 }

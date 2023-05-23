@@ -7,4 +7,42 @@
 
 .advantage-full__image {
   display: block;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-full {
+    display: flex;
+    flex-direction: row;
+
+    &--right {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .advantage-full__text {
+    width: 256px;
+    padding-top: 52px;
+    padding-right: 33px;
+    padding-bottom: 31px;
+    padding-left: 33px;
+  }
+
+  .advantage-full__image {
+    width: calc(100% - 256px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-full__text {
+    width: 400px;
+    padding-top: 52px;
+    padding-right: 50px;
+    padding-bottom: 51px;
+    padding-left: 50px;
+  }
+
+  .advantage-full__image {
+    width: calc(100% - 400px);
+  }
 }

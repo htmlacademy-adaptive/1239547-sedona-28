@@ -1,0 +1,14 @@
+@use "./variables.scss" as *;
+
+@media (min-width: $tablet-width) {
+  .gallery__conatiner {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__conatiner {
+    padding: 0;
+  }
+}

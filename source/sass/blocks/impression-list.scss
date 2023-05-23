@@ -1,5 +1,24 @@
+@use "./variables.scss" as *;
 @use "../mixins.scss" as *;
 
 .impression-list {
   @include list-reset;
+
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .impression-list {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 576px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression-list {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 960px;
+  }
 }

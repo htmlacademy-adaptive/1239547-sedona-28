@@ -1,5 +1,24 @@
+@use "./variables.scss" as *;
 @use "../mixins.scss" as *;
 
 .attractions-list {
   @include list-reset;
+
+  display: grid;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions-list {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions-list {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 960px;
+  }
 }

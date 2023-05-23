@@ -15,3 +15,10 @@
 .intro__description {
   color: $color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .intro__container {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}

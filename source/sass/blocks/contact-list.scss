@@ -2,4 +2,6 @@
 
 .contact-list {
   @include list-reset;
+
+  display: grid;
 }

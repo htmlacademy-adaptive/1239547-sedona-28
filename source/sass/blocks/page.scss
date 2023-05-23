@@ -1,6 +1,14 @@
+@use "./variables.scss" as *;
+
+.page {
+  background-color: $color-page-background;
+}
+
 .page__body {
+  max-width: 1200px;
   margin: 0 auto;
-  width: 320px;
+
+  background-color: $color-main-background;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
