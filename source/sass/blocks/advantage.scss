@@ -2,15 +2,22 @@
 
 .advantage__title {
   margin: 0;
+  margin-bottom: 11px;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: $color-title;
+
+  br {
+    display: none;
+  }
 }
 
 .advantage__subtitle {
+  display: block;
   margin: 0;
+  margin-bottom: 17px;
 
   color: $color-text;
 }
@@ -34,5 +41,21 @@
     .advantage__description {
       color: $color-text-contrast;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage__title {
+    margin-bottom: 14px;
+
+    font-size: 21px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .advantage__subtitle {
+    margin-bottom: 23px;
   }
 }

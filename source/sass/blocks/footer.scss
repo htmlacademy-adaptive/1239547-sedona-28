@@ -2,11 +2,16 @@
 
 .footer__container {
   padding-top: 33px;
-  padding-bottom: 34px;
+  padding-bottom: 33px;
   margin: 0;
+
+  display: grid;
+  grid-template: repeat(3, auto)/1fr;
+  gap: 30px;
 }
 
 .footer__title-hashtag {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -15,10 +20,22 @@
 
 @media (min-width: $tablet-width) {
   .footer__container {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding: 36px 60px;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: auto/repeat(3, 1fr);
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .footer__title-hashtag {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__container {
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }

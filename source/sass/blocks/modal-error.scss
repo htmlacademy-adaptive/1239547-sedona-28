@@ -1,4 +1,18 @@
+@use "./variables.scss" as *;
+
 .modal-error {
   max-width: 400px;
-  margin: auto;
+  padding: 45px 42px 35px 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-error {
+    padding: 50px 47px 49px 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-error {
+    padding-top: 48px;
+  }
 }

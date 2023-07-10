@@ -1,7 +1,49 @@
+@use "./variables.scss" as *;
 @use "../mixins.scss" as *;
 
 .contact-list {
   @include list-reset;
 
   display: grid;
+  gap: 16px;
+}
+
+.contact-list__item-phone {
+  position: relative;
+  padding-right: 58px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: auto;
+    right: auto;
+
+    width: 58px;
+    height: 58px;
+
+    background-color: $color-field-control-background;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.contact-list__item-email {
+  position: relative;
+  padding-right: 58px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: auto;
+    right: auto;
+
+    width: 58px;
+    height: 58px;
+
+    background-color: $color-field-control-background;
+    background-image: url("../img/icon-email.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

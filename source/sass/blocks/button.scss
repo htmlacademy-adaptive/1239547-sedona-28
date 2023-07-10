@@ -1,12 +1,29 @@
 @use "./variables.scss" as *;
 
 .button {
+  padding: 16px 10px;
   border: none;
 
   background-color: $color-button;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-transform: uppercase;
   color: $color-text-contrast;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &:active {
+    background-color: $color-button-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-button-disabled;
+  }
 }
