@@ -1,5 +1,21 @@
 @use "./variables.scss" as *;
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  margin: 0;
+}
+
 .copyright__link {
+  display: flex;
+  align-items: center;
   color: $color-text-black;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: end;
+  }
 }

@@ -2,15 +2,22 @@
 @use "../mixins.scss" as *;
 
 .features__container {
-  margin-right: 18px;
-  margin-left: 18px;
+  margin: 23px 18px 46px;
 }
 
 .features__list {
   @include list-reset;
 }
 
+.features__item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
 .features__title {
+  margin: 0;
+  margin-bottom: 16px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -19,8 +26,40 @@
 }
 
 .features__description {
+  margin: 0;
+
   text-align: left;
   color: $color-text;
+}
+
+.features__description-break {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .features__container {
+    margin-left: 65px;
+  }
+
+  .features__icon {
+    position: absolute;
+    top: 0;
+    left: -47px;
+  }
+
+  .features__item {
+    &--gift {
+      .features__icon {
+        left: -43px;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,26 +73,44 @@
   }
 
   .features__item {
-    padding-top: 60px;
-    padding-right: 33px;
-    padding-bottom: 60px;
-    padding-left: 33px;
+    margin-bottom: 0;
+    padding: 60px 33px;
+  }
+
+  .features__icon {
+    margin-bottom: 26px;
   }
 
   .features__title {
+    margin-bottom: 23px;
+
+    font-size: 21px;
     text-align: center;
   }
 
   .features__description {
     text-align: center;
   }
+
+  .features__description-break {
+    &--tablet {
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .features__item {
-    padding-top: 69px;
-    padding-right: 50px;
-    padding-bottom: 69px;
-    padding-left: 50px;
+    padding: 69px 50px;
+  }
+
+  .features__description-break {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
