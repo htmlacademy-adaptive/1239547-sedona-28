@@ -5,6 +5,21 @@
   @include list-reset;
 
   display: grid;
+  gap: 16px;
+}
+
+.attractions-list__item {
+  min-height: 46px;
+  line-height: 46px;
+
+  &:hover .review-form__label-checkbox::before {
+    background-color: $color-field-background-hover;
+  }
+
+  &:active .review-form__label-checkbox::before {
+    background-color: $color-radio-background-down;
+    background-image: url("../img/icon-check-down.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -13,12 +28,16 @@
     max-width: 480px;
     margin-right: auto;
     margin-left: auto;
+    gap: 16px 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .attractions-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     max-width: 960px;
+    gap: 64px;
+    padding: 31px 0;
+    justify-content: center;
   }
 }

@@ -2,18 +2,12 @@
 
 @media (min-width: $tablet-width) {
   .review__container {
-    margin-top: 108px;
-    margin-right: 60px;
-    margin-bottom: 64px;
-    margin-left: 60px;
+    margin: 108px 60px 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__container {
-    margin-top: 68px;
-    margin-right: 120px;
-    margin-bottom: 64px;
-    margin-left: 120px;
+    margin: 68px 120px 64px;
   }
 }

@@ -1,4 +1,21 @@
+@use "./variables.scss" as *;
+
 .modal-success {
   max-width: 640px;
-  margin: auto;
+}
+
+.modal-success__container {
+  padding: 39px 39px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-success__container {
+    padding: 53px 99px 20px 97px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-success__container {
+    padding-top: 51px;
+  }
 }
