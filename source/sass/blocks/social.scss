@@ -4,12 +4,56 @@
 .social {
   @include list-reset;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
+  display: flex;
+  column-gap: 6px;
   justify-content: center;
+  align-items: center;
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   background-color: $color-button;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--vk::before {
+    background-image: url("../img/icon-vk.svg");
+  }
+
+  &--telegram::before {
+    background-image: url("../img/icon-telegram.svg");
+  }
+
+  &--youtube::before {
+    background-image: url("../img/icon-youtube.svg");
+  }
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &:active {
+    background-color: $color-button-down;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-left: 7px;
+  }
 }

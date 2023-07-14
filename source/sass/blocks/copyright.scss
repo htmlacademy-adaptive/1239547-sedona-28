@@ -1,5 +1,43 @@
 @use "./variables.scss" as *;
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  margin: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $color-menu-text-hover;
+
+    svg {
+      fill: $color-menu-text-hover;
+    }
+  }
+
+  &:active {
+    color: $color-menu-text-down;
+
+    svg {
+      fill: $color-menu-text-down;
+    }
+  }
+
+  svg {
+    fill: $color-text-black;
+  }
+}
+
 .copyright__link {
+  display: flex;
+  align-items: center;
   color: $color-text-black;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: end;
+  }
 }

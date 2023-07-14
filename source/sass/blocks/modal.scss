@@ -1,10 +1,13 @@
 @use "./variables.scss" as *;
 
 .modal {
+  margin: auto;
   box-shadow: 0 7px 15px $color-modal-shadow;
 }
 
 .modal__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -12,9 +15,51 @@
 }
 
 .modal__text {
+  margin: 0;
+  margin-bottom: 28px;
   color: $color-text;
 }
 
+.modal__button {
+  min-width: 180px;
+  padding: 18px;
+  padding-bottom: 14px;
+  font-size: 18px;
+}
+
 .modal__action {
+  padding: 20px;
   background-color: $color-modal-action;
+
+  .modal__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .modal__title {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal__title {
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-bottom: 46px;
+  }
+
+  .modal__button {
+    min-width: 272px;
+  }
+
+  .modal__action {
+    padding: 44px 91px;
+  }
 }

@@ -1,13 +1,28 @@
 @use "./variables.scss" as *;
 
 .welcome {
+  position: relative;
   min-height: 389px;
 
-  background-image: url("../img/background-canyon.jpg");
+  background-image: url("../img/background-canyon-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $color-image-background;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 57px;
+
+    background-image: url("../img/intro-triangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .welcome__logo-image {
@@ -15,14 +30,43 @@
   top: 90px;
 }
 
+@media (min-resolution: 2dppx) {
+  .welcome {
+    background-image: url("../img/background-canyon-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .welcome {
+    min-height: 518px;
+    background-image: url("../img/background-canyon-tablet.jpg");
+  }
+
   .welcome__logo-image {
     top: 77px;
+    min-width: 461px;
+    height: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .welcome {
+      background-image: url("../img/background-canyon-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .welcome {
+    background-image: url("../img/background-canyon-desktop.jpg");
+  }
+
   .welcome__logo-image {
     top: 78px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .welcome {
+      background-image: url("../img/background-canyon-desktop@2x.jpg");
+    }
   }
 }
