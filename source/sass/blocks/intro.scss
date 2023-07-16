@@ -1,22 +1,15 @@
 @use "./variables.scss" as *;
 
-.intro {
-  &--inner .intro__container {
-    margin-top: 37px;
-    margin-bottom: 25px;
-  }
-}
-
 .intro__container {
   max-width: 484px;
-  margin: 32px auto 16px;
+  margin: 33px auto 16px;
   padding-right: 18px;
   padding-left: 18px;
 }
 
 .intro__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   font-size: 18px;
   font-weight: 700;
@@ -28,6 +21,18 @@
   margin: 0;
 
   color: $color-text;
+}
+
+
+.intro {
+  &--inner .intro__container {
+    margin-top: 37px;
+    margin-bottom: 36px;
+  }
+
+  &--inner .intro__title {
+    margin-bottom: 26px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -67,6 +72,7 @@
   }
 
   .intro__title {
+    margin-bottom: 30px;
     font-size: 21px;
 
     br {
@@ -77,10 +83,11 @@
   .intro {
     &--inner .intro__container {
       margin-top: 66px;
-      margin-bottom: 67px;
+      margin-bottom: 81px;
     }
 
     &--inner .intro__title {
+      margin-bottom: 32px;
       font-size: 30px;
     }
   }
@@ -94,7 +101,7 @@
   .intro {
     &--inner .intro__container {
       margin-top: 100px;
-      margin-bottom: 65px;
+      margin-bottom: 88px;
     }
   }
 }

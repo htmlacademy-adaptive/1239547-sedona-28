@@ -7,8 +7,8 @@
 
 .offer__title {
   margin: 0;
-  margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 21px;
+  margin-bottom: 22px;
   font-weight: 700;
   line-height: 26px;
   color: $color-title;
@@ -34,10 +34,17 @@
   width: 100%;
 }
 
+.offer__video-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .offer__video-button {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +73,8 @@
   }
 
   &--inner .offer__title {
-    margin-bottom: 35px;
+    margin-bottom: 27px;
+    font-size: 18px;
   }
 
   &--inner .offer__description {
@@ -107,8 +115,8 @@
 
   .offer__video {
     max-width: 800px;
-    margin-top: 66px;
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .offer__video-image {
@@ -118,13 +126,18 @@
 
   .offer {
     &--inner .offer__container {
-      margin-top: 58px;
+      margin-top: 53px;
       margin-bottom: 40px;
       max-width: 648px;
     }
 
+    &--inner .offer__title {
+      margin-bottom: 32px;
+      font-size: 30px;
+    }
+
     &--inner .offer__description {
-      margin-bottom: 66px;
+      margin-bottom: 89px;
 
       br {
         display: none;
@@ -139,7 +152,7 @@
   }
 
   .offer__video {
-    margin-top: 64px;
+    margin-top: 87px;
     margin-bottom: 84px;
   }
 
@@ -154,8 +167,12 @@
       max-width: 800px;
     }
 
+    &--inner .offer__title {
+      margin-bottom: 31px;
+    }
+
     &--inner .offer__description {
-      margin-bottom: 64px;
+      margin-bottom: 0;
     }
   }
 }

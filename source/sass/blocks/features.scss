@@ -17,6 +17,7 @@
 .features__title {
   margin: 0;
   margin-bottom: 16px;
+  padding-top: 8px;
 
   font-size: 18px;
   font-weight: 700;
@@ -75,6 +76,21 @@
   .features__item {
     margin-bottom: 0;
     padding: 60px 33px;
+
+    &--housing .features__icon {
+      height: 72px;
+      width: 77px;
+    }
+
+    &--food .features__icon {
+      height: 68px;
+      width: 80px;
+    }
+
+    &--gift .features__icon {
+      height: 75px;
+      width: 66.5px;
+    }
   }
 
   .features__icon {

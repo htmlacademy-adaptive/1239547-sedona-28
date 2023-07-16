@@ -4,8 +4,8 @@
   position: relative;
   min-height: 158px;
 
-  background-image: url("../img/background-canyon-inner.jpg");
-  background-position: center;
+  background-image: url("../img/background-canyon-inner-mobile.jpg");
+  background-position: center -56px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $color-image-background;
@@ -30,22 +30,44 @@
   top: 52px;
 }
 
+@media (min-resolution: 2dppx) {
+  .welcome-inner {
+    background-image: url("../img/background-canyon-inner-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .welcome-inner {
     min-height: 290px;
+    background-image: url("../img/background-canyon-inner-tablet.jpg");
   }
 
   .welcome-inner__logo-image {
     top: 95px;
+    min-width: 460px;
+    height: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .welcome-inner {
+      background-image: url("../img/background-canyon-inner-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .welcome-inner {
     min-height: 301px;
+    background-image: url("../img/background-canyon-inner-desktop.jpg");
   }
 
   .welcome-inner__logo-image {
     top: 101px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .welcome-inner {
+      background-image: url("../img/background-canyon-inner-desktop@2x.jpg");
+    }
   }
 }
