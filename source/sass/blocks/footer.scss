@@ -18,9 +18,15 @@
   color: $color-text-black;
 }
 
+.footer {
+  &--inner .footer__container {
+    padding-top: 26px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .footer__container {
-    padding: 31px 60px;
+    padding: 30px 60px;
 
     display: grid;
     grid-template: auto/repeat(3, 1fr);
@@ -32,11 +38,23 @@
   .footer__title-hashtag {
     text-align: left;
   }
+
+  .footer {
+    &--inner .footer__container {
+      padding-top: 33px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .footer__container {
     padding: 29px 120px 36px;
     align-items: center;
+  }
+
+  .footer {
+    &--inner .footer__container {
+      padding-top: 29px;
+    }
   }
 }

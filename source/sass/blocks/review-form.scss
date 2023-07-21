@@ -27,8 +27,16 @@
     border-top: 1px solid $color-border;
   }
 
+  &--impression {
+    padding-bottom: 22px;
+  }
+
+  &--attractions {
+    padding-bottom: 23px;
+  }
+
   &--review {
-    padding-bottom: 56px;
+    padding-bottom: 36px;
   }
 
   &--review::after {
@@ -58,6 +66,7 @@
 
   font-size: 18px;
   font-weight: 700;
+  font-stretch: condensed;
   line-height: 26px;
   text-transform: initial;
   color: $color-text-filed;
@@ -84,6 +93,7 @@
 
   &--text {
     margin-bottom: 0;
+    max-height: 150px;
   }
 }
 
@@ -221,13 +231,15 @@
 
     &--review {
       grid-column: 1/3;
-      padding: 0 0 48px 0;
+      padding: 0 0 33px 0;
     }
 
     &--name .review-form__title::before,
     &--name .review-form__title::after,
     &--contact .review-form__title::before,
-    &--contact .review-form__title::after {
+    &--contact .review-form__title::after,
+    &--attractions .review-form__title::before,
+    &--attractions .review-form__title::after {
       content: none;
     }
 
@@ -253,11 +265,13 @@
     padding-left: 0;
   }
 
-  .review-form__field--text {
-    display: block;
-    max-width: 768px;
-    height: 160px;
-    margin: 0 auto;
+  .review-form__field {
+    &--text {
+      display: block;
+      max-width: 768px;
+      max-height: 160px;
+      margin: 0 auto;
+    }
   }
 
   .review-form__button {
@@ -278,6 +292,14 @@
 
     &--contact {
       padding: 0 0 71px 50px;
+    }
+
+    &--impression {
+      padding: 0 0 56px 0;
+    }
+
+    &--attractions {
+      padding: 0 0 53px 0;
     }
   }
 
