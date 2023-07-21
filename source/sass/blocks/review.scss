@@ -1,13 +1,17 @@
 @use "./variables.scss" as *;
 
+.review__container {
+  margin-top: -10px;
+}
+
 @media (min-width: $tablet-width) {
   .review__container {
-    margin: 108px 60px 64px;
+    margin: 108px 60px 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__container {
-    margin: 68px 120px 64px;
+    margin: -19px 120px 48px;
   }
 }

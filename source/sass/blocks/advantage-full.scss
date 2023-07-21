@@ -3,6 +3,12 @@
 .advantage-full {
   background-color: $color-card-background;
   color: $color-text-contrast;
+
+  &--left .advantage__description {
+    .br {
+      display: block;
+    }
+  }
 }
 
 .advantage-full__image {

@@ -90,6 +90,10 @@
       margin-bottom: 32px;
       font-size: 30px;
     }
+
+    &--inner .intro__title--review {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -102,6 +106,11 @@
     &--inner .intro__container {
       margin-top: 100px;
       margin-bottom: 88px;
+    }
+
+    &--inner .intro__title--review {
+      margin-top: 116px;
+      margin-bottom: 31px;
     }
   }
 }
